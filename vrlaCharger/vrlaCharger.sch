@@ -1,0 +1,320 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Linear:LM317_3PinPackage U1
+U 1 1 5D7EF5EB
+P 3050 1475
+F 0 "U1" H 3050 1717 50  0000 C CNN
+F 1 "LM317_3PinPackage" H 3050 1626 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3050 1725 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 3050 1475 50  0001 C CNN
+	1    3050 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5D7EF751
+P 1675 1850
+F 0 "R2" H 1745 1896 50  0000 L CNN
+F 1 "1k" H 1745 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1605 1850 50  0001 C CNN
+F 3 "~" H 1675 1850 50  0001 C CNN
+	1    1675 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D7EF82D
+P 3850 1700
+F 0 "R4" H 3920 1746 50  0000 L CNN
+F 1 "470R" H 3920 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3780 1700 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D7EF981
+P 3850 2675
+F 0 "R5" H 3920 2721 50  0000 L CNN
+F 1 "2k2" H 3920 2630 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3780 2675 50  0001 C CNN
+F 3 "~" H 3850 2675 50  0001 C CNN
+	1    3850 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D7EFA12
+P 3375 2975
+F 0 "R3" V 3168 2975 50  0000 C CNN
+F 1 "1R" V 3259 2975 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 3305 2975 50  0001 C CNN
+F 3 "~" H 3375 2975 50  0001 C CNN
+	1    3375 2975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5D7EFB2A
+P 1675 2225
+F 0 "D2" V 1713 2108 50  0000 R CNN
+F 1 "LED" V 1622 2108 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 1675 2225 50  0001 C CNN
+F 3 "~" H 1675 2225 50  0001 C CNN
+	1    1675 2225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5D7EFC28
+P 3050 2100
+F 0 "D3" V 3088 1983 50  0000 R CNN
+F 1 "LED" V 2997 1983 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 3050 2100 50  0001 C CNN
+F 3 "~" H 3050 2100 50  0001 C CNN
+	1    3050 2100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5D7EFDDB
+P 2550 1925
+F 0 "C1" H 2665 1971 50  0000 L CNN
+F 1 "100n" H 2665 1880 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2588 1775 50  0001 C CNN
+F 3 "~" H 2550 1925 50  0001 C CNN
+	1    2550 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5D7EFE46
+P 4200 1900
+F 0 "C2" H 4315 1946 50  0000 L CNN
+F 1 "100n" H 4315 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4238 1750 50  0001 C CNN
+F 3 "~" H 4200 1900 50  0001 C CNN
+	1    4200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5D7EFFC1
+P 1000 1975
+F 0 "J1" H 920 2192 50  0000 C CNN
+F 1 "Conn_01x02" H 920 2101 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1000 1975 50  0001 C CNN
+F 3 "~" H 1000 1975 50  0001 C CNN
+	1    1000 1975
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5D7F009C
+P 5000 2075
+F 0 "J2" H 4919 1750 50  0000 C CNN
+F 1 "Conn_01x02" H 4919 1841 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 5000 2075 50  0001 C CNN
+F 3 "~" H 5000 2075 50  0001 C CNN
+	1    5000 2075
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_BEC Q2
+U 1 1 5D7F0629
+P 3150 2675
+F 0 "Q2" H 3340 2721 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 3340 2630 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3350 2775 50  0001 C CNN
+F 3 "~" H 3150 2675 50  0001 C CNN
+	1    3150 2675
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1475 2550 1475
+Wire Wire Line
+	1675 2075 1675 2000
+Wire Wire Line
+	1200 1975 1500 1975
+Wire Wire Line
+	2550 1775 2550 1475
+Connection ~ 2550 1475
+Wire Wire Line
+	3225 2975 3050 2975
+Wire Wire Line
+	3050 2975 3050 2875
+Wire Wire Line
+	3050 2475 3050 2250
+Wire Wire Line
+	3050 1950 3050 1900
+Wire Wire Line
+	3050 2975 2550 2975
+Wire Wire Line
+	2550 2975 2550 2075
+Connection ~ 3050 2975
+Connection ~ 2550 2975
+Wire Wire Line
+	1200 2075 1500 2075
+Wire Wire Line
+	1500 2075 1500 2975
+Wire Wire Line
+	1500 2975 1675 2975
+Wire Wire Line
+	3350 1475 3850 1475
+Wire Wire Line
+	3850 1475 3850 1550
+Wire Wire Line
+	3525 2975 3650 2975
+Wire Wire Line
+	3850 2975 3850 2825
+Wire Wire Line
+	4200 1750 4200 1475
+Wire Wire Line
+	4200 1475 3850 1475
+Connection ~ 3850 1475
+Wire Wire Line
+	3850 2975 4200 2975
+Wire Wire Line
+	4200 2975 4200 2050
+Connection ~ 3850 2975
+Wire Wire Line
+	4550 1975 4550 1475
+Wire Wire Line
+	4550 1475 4200 1475
+Connection ~ 4200 1475
+Wire Wire Line
+	4550 2075 4550 2975
+Wire Wire Line
+	4550 2975 4200 2975
+Connection ~ 4200 2975
+Wire Wire Line
+	3350 2675 3650 2675
+Wire Wire Line
+	3650 2675 3650 2975
+Connection ~ 3650 2975
+Wire Wire Line
+	3650 2975 3850 2975
+$Comp
+L Device:R_POT RV1
+U 1 1 5D7F2C96
+P 3850 2275
+F 0 "RV1" H 3781 2321 50  0000 R CNN
+F 1 "10k" H 3781 2230 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-10-V05_Vertical" H 3850 2275 50  0001 C CNN
+F 3 "~" H 3850 2275 50  0001 C CNN
+	1    3850 2275
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2525 3850 2425
+Wire Wire Line
+	3850 1850 3850 1900
+Wire Wire Line
+	3700 2275 3600 2275
+Wire Wire Line
+	3600 2275 3600 2050
+Wire Wire Line
+	3600 2050 3850 2050
+Connection ~ 3850 2050
+Wire Wire Line
+	3850 2050 3850 2125
+Wire Wire Line
+	3050 1900 3850 1900
+Connection ~ 3050 1900
+Wire Wire Line
+	3050 1900 3050 1775
+Connection ~ 3850 1900
+Wire Wire Line
+	3850 1900 3850 2050
+$Comp
+L Device:Q_PMOS_GSD Q1
+U 1 1 5D7FA690
+P 1950 1575
+F 0 "Q1" V 2293 1575 50  0000 C CNN
+F 1 "Q_PMOS_GSD" V 2202 1575 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2150 1675 50  0001 C CNN
+F 3 "~" H 1950 1575 50  0001 C CNN
+	1    1950 1575
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1500 1475 1675 1475
+Wire Wire Line
+	1500 1475 1500 1975
+$Comp
+L Device:D_Zener D1
+U 1 1 5D7FBF80
+P 2125 1950
+F 0 "D1" H 2125 1734 50  0000 C CNN
+F 1 "10V" H 2125 1825 50  0000 C CNN
+F 2 "Diode_SMD:D_MiniMELF" H 2125 1950 50  0001 C CNN
+F 3 "~" H 2125 1950 50  0001 C CNN
+	1    2125 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D7FC15E
+P 1950 2575
+F 0 "R1" H 2020 2621 50  0000 L CNN
+F 1 "10k" H 2020 2530 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1880 2575 50  0001 C CNN
+F 3 "~" H 1950 2575 50  0001 C CNN
+	1    1950 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1475 2325 1475
+Wire Wire Line
+	2275 1950 2325 1950
+Wire Wire Line
+	2325 1950 2325 1475
+Connection ~ 2325 1475
+Wire Wire Line
+	1950 1775 1950 1950
+Wire Wire Line
+	1975 1950 1950 1950
+Connection ~ 1950 1950
+Wire Wire Line
+	1950 1950 1950 2425
+Wire Wire Line
+	1950 2725 1950 2975
+Connection ~ 1950 2975
+Text Notes 2750 2850 0    50   ~ 0
+BC847
+Text Notes 1875 1425 0    50   ~ 0
+IRLML6402
+Wire Wire Line
+	4550 1975 4800 1975
+Wire Wire Line
+	4550 2075 4800 2075
+Wire Wire Line
+	2325 1475 2550 1475
+Wire Wire Line
+	1950 2975 2550 2975
+Wire Wire Line
+	1675 1700 1675 1475
+Connection ~ 1675 1475
+Wire Wire Line
+	1675 1475 1750 1475
+Wire Wire Line
+	1675 2375 1675 2975
+Connection ~ 1675 2975
+Wire Wire Line
+	1675 2975 1950 2975
+$EndSCHEMATC
