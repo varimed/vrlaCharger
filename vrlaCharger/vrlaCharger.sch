@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:vrlaCharger-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -115,24 +116,24 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5D7EFFC1
-P 1000 1975
-F 0 "J1" H 920 2192 50  0000 C CNN
-F 1 "Conn_01x02" H 920 2101 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1000 1975 50  0001 C CNN
-F 3 "~" H 1000 1975 50  0001 C CNN
-	1    1000 1975
-	-1   0    0    -1  
+P 1050 2075
+F 0 "J1" H 970 2292 50  0000 C CNN
+F 1 "Conn_01x02" H 970 2201 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 1050 2075 50  0001 C CNN
+F 3 "~" H 1050 2075 50  0001 C CNN
+	1    1050 2075
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5D7F009C
-P 5000 2075
-F 0 "J2" H 4919 1750 50  0000 C CNN
-F 1 "Conn_01x02" H 4919 1841 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 5000 2075 50  0001 C CNN
-F 3 "~" H 5000 2075 50  0001 C CNN
-	1    5000 2075
-	1    0    0    1   
+P 5025 1975
+F 0 "J2" H 4944 1650 50  0000 C CNN
+F 1 "Conn_01x02" H 4944 1741 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 5025 1975 50  0001 C CNN
+F 3 "~" H 5025 1975 50  0001 C CNN
+	1    5025 1975
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_BEC Q2
@@ -150,8 +151,6 @@ Wire Wire Line
 Wire Wire Line
 	1675 2075 1675 2000
 Wire Wire Line
-	1200 1975 1500 1975
-Wire Wire Line
 	2550 1775 2550 1475
 Connection ~ 2550 1475
 Wire Wire Line
@@ -168,8 +167,6 @@ Wire Wire Line
 	2550 2975 2550 2075
 Connection ~ 3050 2975
 Connection ~ 2550 2975
-Wire Wire Line
-	1200 2075 1500 2075
 Wire Wire Line
 	1500 2075 1500 2975
 Wire Wire Line
@@ -193,14 +190,11 @@ Wire Wire Line
 	4200 2975 4200 2050
 Connection ~ 3850 2975
 Wire Wire Line
-	4550 1975 4550 1475
+	4675 1975 4675 1475
 Wire Wire Line
-	4550 1475 4200 1475
-Connection ~ 4200 1475
+	4675 2075 4675 2975
 Wire Wire Line
-	4550 2075 4550 2975
-Wire Wire Line
-	4550 2975 4200 2975
+	4675 2975 4200 2975
 Connection ~ 4200 2975
 Wire Wire Line
 	3350 2675 3650 2675
@@ -221,26 +215,17 @@ F 3 "~" H 3850 2275 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 2525 3850 2425
+	3850 2525 3850 2450
 Wire Wire Line
 	3850 1850 3850 1900
 Wire Wire Line
 	3700 2275 3600 2275
-Wire Wire Line
-	3600 2275 3600 2050
-Wire Wire Line
-	3600 2050 3850 2050
-Connection ~ 3850 2050
-Wire Wire Line
-	3850 2050 3850 2125
 Wire Wire Line
 	3050 1900 3850 1900
 Connection ~ 3050 1900
 Wire Wire Line
 	3050 1900 3050 1775
 Connection ~ 3850 1900
-Wire Wire Line
-	3850 1900 3850 2050
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 5D7FA690
@@ -300,10 +285,6 @@ BC847
 Text Notes 1875 1425 0    50   ~ 0
 IRLML6402
 Wire Wire Line
-	4550 1975 4800 1975
-Wire Wire Line
-	4550 2075 4800 2075
-Wire Wire Line
 	2325 1475 2550 1475
 Wire Wire Line
 	1950 2975 2550 2975
@@ -317,4 +298,37 @@ Wire Wire Line
 Connection ~ 1675 2975
 Wire Wire Line
 	1675 2975 1950 2975
+Wire Wire Line
+	1250 1975 1500 1975
+Wire Wire Line
+	1500 2075 1250 2075
+Wire Wire Line
+	4675 1975 4825 1975
+Wire Wire Line
+	4675 2075 4825 2075
+Wire Wire Line
+	3850 1900 3850 2125
+Wire Wire Line
+	3600 2275 3600 2450
+Wire Wire Line
+	3600 2450 3850 2450
+Connection ~ 3850 2450
+Wire Wire Line
+	3850 2450 3850 2425
+$Comp
+L Device:D_Schottky D4
+U 1 1 5D805B89
+P 4425 1475
+F 0 "D4" H 4425 1259 50  0000 C CNN
+F 1 "D_Schottky" H 4425 1350 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 4425 1475 50  0001 C CNN
+F 3 "~" H 4425 1475 50  0001 C CNN
+	1    4425 1475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4200 1475 4275 1475
+Connection ~ 4200 1475
+Wire Wire Line
+	4575 1475 4675 1475
 $EndSCHEMATC
